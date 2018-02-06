@@ -19,13 +19,11 @@
 - [ ] Add Hibernate config
 - [ ] Create entities and start DAO's
 - [ ] Add unit tests for DAOs
-- [ ] Create database
 - [ ] Create log in home page
 
 
 ### Week 6
 - [ ] Do checkpoint 2 by next week:
-- [ ] Database designed and created
 - [ ] DAO's implemented with Hibernate
 - [ ] Log4J is implemented
 - [ ] class design/other diagrams created
