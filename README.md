@@ -14,7 +14,8 @@ I love to post pictures of foods that I eat and I love to look at pictures that 
     + Store users/roles
     + Tables: Pictures, Restaurants
 + Web Services or APIs
-    + google maps for restaurant locations
+    + google maps for restaurant locations (?)
+    + Amazon S3 for picture storage (?)
 + Independent research topic (tbd)
 + Logging
     + Log4J
