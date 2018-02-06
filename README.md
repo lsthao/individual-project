@@ -23,10 +23,8 @@ I love to post pictures of foods that I eat and I love to look at pictures that 
     + JUnit tests to achieve 80% code coverage
     
 ### Design
-* [Screen Design](screendesign.md)
-* [Application Flow](applicationflow.md)
+* [Screen Design/Application Flow](screendesign.md)
 * [Database Design](databasedesign.md)
-
 
 ### [Project Plan](projectplan.md)
 
