@@ -9,6 +9,7 @@ I love to post pictures of foods that I eat and I love to look at pictures that 
 + Security/Authentication
     + Admin role: Full CRUD on picture posts
     + User role: create/update picture posts
+        + this site will have multiple users
     + All: none
 + Database (MySQL/Hibernate)
     + Store users/roles
