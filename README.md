@@ -17,6 +17,7 @@ I love to post pictures of foods that I eat and I love to look at pictures that 
 + Web Services or APIs
     + google maps for restaurant locations (?)
     + Amazon S3 for picture storage (?)
+    + Amazon Rekognition
 + Independent research topic (tbd)
 + Logging
     + Log4J
