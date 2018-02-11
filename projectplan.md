@@ -8,16 +8,16 @@
 - [X] List of possible API/Web Service done
 
 ### Week 4
-- [ ] Project structure
+- [X] Project structure
 - [ ] Create jsp templates
-- [ ] Create database
+- [X] Create database
 - [ ] Determine independent research topic
-- [ ] Set up logging
+- [X] Set up logging
 - [ ] Set up unit testing
 
 ### Week 5
-- [ ] Add Hibernate config
-- [ ] Create entities and start DAO's
+- [X] Add Hibernate config
+- [X] Create entities and start DAO's
 - [ ] Add unit tests for DAOs
 - [ ] Create log in home page
 
