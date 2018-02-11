@@ -5,7 +5,7 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 @Entity
-@Table(name="Picture")
+@Table(name="Pictures")
 public class Picture {
 
     @Id
@@ -21,6 +21,17 @@ public class Picture {
     @Column(name="Username")
     private String username;
 
+    public Picture() {
+
+    }
+
+    public Picture(int pictureID, String picture, int restaurantID, String username) {
+        this.pictureID = pictureID;
+        this.picture = picture;
+        this.restaurantID = restaurantID;
+        this.username = username;
+
+    }
 
     public int getPictureID() {
         return pictureID;
