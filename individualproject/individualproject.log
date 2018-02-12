@@ -1,0 +1,88 @@
+2018-02-11 23:57:08,363 0    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-11 23:57:08,366 3    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2018-02-11 23:57:12,011 3648 [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-11 23:57:12,867 4504 [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-11 23:57:13,019 4656 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/foodpictures]
+2018-02-11 23:57:13,019 4656 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {user=root, password=****}
+2018-02-11 23:57:13,019 4656 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+2018-02-11 23:57:13,023 4660 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-11 23:57:18,481 10118 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-12 00:05:48,491 0    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-12 00:05:48,499 8    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2018-02-12 00:05:49,737 1246 [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-12 00:05:50,107 1616 [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-12 00:05:50,173 1682 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/foodpictures]
+2018-02-12 00:05:50,176 1685 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {user=root, password=****}
+2018-02-12 00:05:50,176 1685 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+2018-02-12 00:05:50,188 1697 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-12 00:05:51,275 2784 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-12 00:08:20,346 0    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-12 00:08:20,368 22   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2018-02-12 00:08:21,064 718  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-12 00:08:21,426 1080 [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-12 00:08:21,432 1086 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/foodpictures]
+2018-02-12 00:08:21,435 1089 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {user=root, password=****}
+2018-02-12 00:08:21,435 1089 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+2018-02-12 00:08:21,442 1096 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-12 00:08:22,345 1999 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-12 00:13:33,663 0    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-12 00:13:33,676 13   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2018-02-12 00:13:36,182 2519 [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-12 00:13:37,160 3497 [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-12 00:13:37,373 3710 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/foodpictures]
+2018-02-12 00:13:37,374 3711 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {user=root, password=****}
+2018-02-12 00:13:37,374 3711 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+2018-02-12 00:13:37,395 3732 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-12 00:13:42,718 9055 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-12 00:18:15,797 0    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-12 00:18:15,803 6    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2018-02-12 00:18:17,237 1440 [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-12 00:18:17,491 1694 [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-12 00:18:17,519 1722 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/foodpictures]
+2018-02-12 00:18:17,520 1723 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {user=root, password=****}
+2018-02-12 00:18:17,521 1724 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+2018-02-12 00:18:17,534 1737 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-12 00:18:18,472 2675 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-12 00:19:01,424 0    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-12 00:19:01,431 7    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2018-02-12 00:19:02,233 809  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-12 00:19:02,582 1158 [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-12 00:19:02,588 1164 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/foodpictures]
+2018-02-12 00:19:02,590 1166 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {user=root, password=****}
+2018-02-12 00:19:02,590 1166 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+2018-02-12 00:19:02,595 1171 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-12 00:19:03,618 2194 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-12 00:20:03,910 2    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-12 00:20:03,915 7    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2018-02-12 00:20:04,820 912  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-12 00:20:05,224 1316 [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-12 00:20:05,257 1349 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/foodpictures]
+2018-02-12 00:20:05,258 1350 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {user=root, password=****}
+2018-02-12 00:20:05,259 1351 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+2018-02-12 00:20:05,263 1355 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-12 00:20:06,420 2512 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-12 00:20:07,683 3775 [main] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator  - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-12 00:20:09,573 5665 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2018-02-12 00:20:09,573 5665 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry 'picture.jpg' for key 'PRIMARY'
+2018-02-12 00:20:09,606 5698 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2018-02-12 00:20:09,607 5699 [main] ERROR org.hibernate.internal.ExceptionMapperStandardImpl  - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2018-02-12 00:21:19,788 0    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-12 00:21:19,791 3    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2018-02-12 00:21:20,614 826  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-12 00:21:20,912 1124 [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-12 00:21:20,920 1132 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/foodpictures]
+2018-02-12 00:21:20,920 1132 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {user=root, password=****}
+2018-02-12 00:21:20,920 1132 [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+2018-02-12 00:21:20,925 1137 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-12 00:21:21,903 2115 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-12 00:21:23,924 4136 [main] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator  - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-12 00:22:07,370 0    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {5.2.12.Final}
+2018-02-12 00:22:07,374 4    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2018-02-12 00:22:07,968 598  [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-02-12 00:22:08,301 931  [main] WARN  org.hibernate.orm.connections.pooling  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-02-12 00:22:08,312 942  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/foodpictures]
+2018-02-12 00:22:08,313 943  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001001: Connection properties: {user=root, password=****}
+2018-02-12 00:22:08,317 947  [main] INFO  org.hibernate.orm.connections.pooling  - HHH10001003: Autocommit mode: false
+2018-02-12 00:22:08,320 950  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-02-12 00:22:09,758 2388 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-02-12 00:22:11,036 3666 [main] INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator  - HHH000397: Using ASTQueryTranslatorFactory

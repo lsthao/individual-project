@@ -9,6 +9,8 @@ import javax.persistence.*;
 public class Picture {
 
     @Id
+    @GeneratedValue(generator = "increment")
+    @GenericGenerator(name="increment", strategy = "increment")
     @Column(name="PictureID")
     private int pictureID;
 
@@ -25,8 +27,7 @@ public class Picture {
 
     }
 
-    public Picture(int pictureID, String picture, int restaurantID, String username) {
-        this.pictureID = pictureID;
+    public Picture(String picture, int restaurantID, String username) {
         this.picture = picture;
         this.restaurantID = restaurantID;
         this.username = username;
