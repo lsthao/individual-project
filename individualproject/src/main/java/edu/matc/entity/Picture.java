@@ -4,42 +4,42 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
-@Entity
+@Entity(name="Picture")
 @Table(name="Pictures")
 public class Picture {
 
     @Id
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name="increment", strategy = "increment")
-    @Column(name="PictureID")
-    private int pictureID;
+    private int id;
 
     @Column(name="Picture")
     private String picture;
 
-    @Column(name="RestaurantID")
-    private int restaurantID;
+    @ManyToOne
+    private Restaurant restaurant;
 
-    @Column(name="Username")
-    private String username;
+    @Column(name="user_id")
+    private int userID;
 
     public Picture() {
 
     }
 
-    public Picture(String picture, int restaurantID, String username) {
+    public Picture(String picture, Restaurant restaurant, int userID) {
         this.picture = picture;
-        this.restaurantID = restaurantID;
-        this.username = username;
+        this.restaurant = restaurant;
+        this.userID=userID;
 
     }
 
-    public int getPictureID() {
-        return pictureID;
+
+    public int getId() {
+        return id;
     }
 
-    public void setPictureID(int pictureID) {
-        this.pictureID = pictureID;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getPicture() {
@@ -50,22 +50,19 @@ public class Picture {
         this.picture = picture;
     }
 
-    public int getRestaurantID() {
-        return restaurantID;
+    public Restaurant getRestaurant() {
+        return restaurant;
     }
 
-    public void setRestaurantID(int restaurantID) {
-        this.restaurantID = restaurantID;
+    public void setRestaurant(Restaurant restaurant) {
+        this.restaurant = restaurant;
     }
 
-    public String getUsername() {
-        return username;
+    public int getUserID() {
+        return userID;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserID(int userID) {
+        this.userID = userID;
     }
-
-
-
 }

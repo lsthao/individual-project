@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="foodpictures@localhost" uuid="091ff4a9-f344-4784-8ae7-3695eeaeeb21">
-      <database-info product="MySQL" version="5.7.21-0ubuntu0.16.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.45 ( Revision: 9131eefa398531c7dc98776e8a3fe839e544c5b2 )">
-        <extra-name-characters>#@</extra-name-characters>
-        <identifier-quote-string>`</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
-      <secret-storage>master_key</secret-storage>
-      <user-name>root</user-name>
-      <introspection-schemas>*:foodpictures</introspection-schemas>
-    </data-source>
     <data-source name="hibernate.cfg.xml/Hibernate" uuid="c84f6481-b109-4bd0-bfcb-30fc5f4fa3ee">
       <database-info product="MySQL" version="5.7.21-0ubuntu0.16.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.45 ( Revision: 9131eefa398531c7dc98776e8a3fe839e544c5b2 )">
         <extra-name-characters>#@</extra-name-characters>
@@ -20,7 +10,7 @@
       <user-name>root</user-name>
       <introspection-schemas>*:foodpictures</introspection-schemas>
     </data-source>
-    <data-source name="foodpicturestest@localhost" uuid="902ef140-97cf-4186-9bf1-10072e4d335a">
+    <data-source name="foodpicturestest@localhost" uuid="9386c078-aefb-47b3-95b5-be210fb1bebd">
       <database-info product="MySQL" version="5.7.21-0ubuntu0.16.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.45 ( Revision: 9131eefa398531c7dc98776e8a3fe839e544c5b2 )">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>

@@ -1,61 +1,92 @@
 package edu.matc.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import org.hibernate.annotations.GenericGenerator;
 
-@Entity
-@Table(name="Restaurants")
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
+
+@Entity(name="Restaurant")
+@Table(name="Restaurant")
 public class Restaurant {
 
     @Id
-    @Column(name="RestaurantID")
-    int restaurantID;
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+    @GenericGenerator(name="native", strategy = "native")
+    int id;
 
-    @Column(name="RestaurantName")
-    String restaurantName;
+    @Column(name="name")
+    String name;
 
-    @Column(name="RestaurantLocation")
-    String restaurantLocation;
+    @Column(name="location")
+    String location;
+
+    @Column(name="phone_number")
+    String phoneNumber;
+
+    @OneToMany(mappedBy = "restaurant", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Picture> pictures = new HashSet<>();
 
     public Restaurant() {
 
     }
 
-    public Restaurant(int restaurantID, String restaurantName, String restaurantLocation) {
+    public Restaurant(String name, String location, String phoneNumber) {
 
-        this.restaurantID = restaurantID;
-        this.restaurantName = restaurantName;
-        this.restaurantLocation = restaurantLocation;
+        this.name = name;
+        this.location = location;
+        this.phoneNumber = phoneNumber;
 
     }
-
-    public int getRestaurantID() {
-        return restaurantID;
+    public int getId() {
+        return id;
     }
 
-    public void setRestaurantID(int restaurantID) {
-        this.restaurantID = restaurantID;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getRestaurantName() {
-        return restaurantName;
+    public String getName() {
+        return name;
     }
 
-    public void setRestaurantName(String restaurantName) {
-        this.restaurantName = restaurantName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getRestaurantLocation() {
-        return restaurantLocation;
+    public String getLocation() {
+        return location;
     }
 
-    public void setRestaurantLocation(String restaurantLocation) {
-        this.restaurantLocation = restaurantLocation;
+    public void setLocation(String location) {
+        this.location = location;
     }
 
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
 
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public Set<Picture> getPictures() {
+        return pictures;
+    }
+
+    public void setPictures(Set<Picture> pictures) {
+        this.pictures = pictures;
+    }
+
+    public void addPicture(Picture picture) {
+        pictures.add(picture);
+        picture.setRestaurant(this);
+    }
+
+    public void removePicture(Picture picture) {
+        pictures.remove(picture);
+        picture.setRestaurant(null);
+    }
 
 
 }

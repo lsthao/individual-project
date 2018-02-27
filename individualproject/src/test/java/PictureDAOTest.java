@@ -1,5 +1,7 @@
 import edu.matc.entity.Picture;
+import edu.matc.entity.Restaurant;
 import edu.matc.persistence.PictureDAO;
+import edu.matc.persistence.RestaurantDAO;
 import org.apache.log4j.Logger;
 import org.junit.Before;
 import org.junit.Test;
@@ -23,12 +25,15 @@ public class PictureDAOTest {
     }
 
     @Test
-    public void addPictureTest() {
-        Picture picture = new Picture("newpicturetest.jpg", 2, "username");
-        int pictureID = pictureDAO.addPicture(picture);
-        assertNotEquals(initialNumberOfPictures, pictureDAO.getAllPictures().size());
-        assertEquals("newpicturetest.jpg", picture.getPicture());
-        assertEquals(pictureID, picture.getPictureID());
+    public void addTest() {
+        RestaurantDAO restaurantDAO = new RestaurantDAO();
+        Restaurant restaurant = restaurantDAO.getRestaurantByID(1);
+
+        Picture picture = new Picture("newpicture.jpg", restaurant, 2);
+        restaurant.addPicture(picture);
+        int id = pictureDAO.addPicture(picture);
+
+
     }
 
     @Test

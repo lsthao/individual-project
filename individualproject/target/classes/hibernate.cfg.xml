@@ -10,7 +10,7 @@
 
         <!-- Database connection settings uBUs4XoxU9UsEw-->
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/foodpictures</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/foodpicturestest</property>
         <property name="connection.username">root</property>
         <property name="connection.password">student</property>
 
