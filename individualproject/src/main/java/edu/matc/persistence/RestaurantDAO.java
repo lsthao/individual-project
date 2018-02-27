@@ -52,7 +52,9 @@ public class RestaurantDAO {
      */
     public void updateRestaurant(Restaurant restaurant) {
         Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
         session.saveOrUpdate(restaurant);
+        transaction.commit();
         session.close();
     }
 

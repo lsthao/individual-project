@@ -52,7 +52,9 @@ public class PictureDAO {
      */
     public void updatePicture(Picture picture) {
         Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
         session.saveOrUpdate(picture);
+        transaction.commit();
         session.close();
     }
 

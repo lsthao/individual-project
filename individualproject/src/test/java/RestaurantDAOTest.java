@@ -8,6 +8,8 @@ import org.junit.Test;
 
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 public class RestaurantDAOTest {
 
     int initialNumberOfPictures;
@@ -30,6 +32,33 @@ public class RestaurantDAOTest {
 
     }
 
+    @Test
+    public void getAllRestaurants() {
+        List<Restaurant> restaurants = restaurantDAO.getAllRestaurants();
+        assertEquals(1, restaurants.size());
+    }
 
+    @Test
+    public void getRestaurantByID() {
+        Restaurant restaurant = restaurantDAO.getRestaurantByID(1);
+        assertEquals("restaurant name", restaurant.getName());
+    }
+
+    @Test
+    public void updateRestaurant() {
+        Restaurant restaurant = restaurantDAO.getRestaurantByID(1);
+        String newLocation = "new location";
+        restaurant.setLocation(newLocation);
+        restaurantDAO.updateRestaurant(restaurant);
+        Restaurant newRestaurant = restaurantDAO.getRestaurantByID(1);
+        assertEquals(newLocation, newRestaurant.getLocation());
+    }
+
+    @Test
+    public void deleteRestaurant() {
+        Restaurant restaurant = restaurantDAO.getRestaurantByID(1);
+        restaurantDAO.delete(restaurant);
+        assertNull(restaurantDAO.getRestaurantByID(1));
+    }
 
 }
