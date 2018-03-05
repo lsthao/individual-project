@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: RestaurantDAOTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.123 sec <<< FAILURE! - in RestaurantDAOTest
+addWithPictureTest  Time elapsed: 0.011 sec  <<< ERROR!
+org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at RestaurantDAOTest.addWithPictureTest(RestaurantDAOTest.java:31)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'new restaurant name' for key 'Restaurant_name_uindex'
+	at RestaurantDAOTest.addWithPictureTest(RestaurantDAOTest.java:31)
+
+deleteRestaurant  Time elapsed: 0.014 sec  <<< ERROR!
+java.lang.IllegalArgumentException: attempt to create delete event with null entity
+	at RestaurantDAOTest.deleteRestaurant(RestaurantDAOTest.java:60)
+
+updateRestaurant  Time elapsed: 0.037 sec  <<< ERROR!
+java.lang.NullPointerException
+	at RestaurantDAOTest.updateRestaurant(RestaurantDAOTest.java:51)
+

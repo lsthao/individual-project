@@ -11,8 +11,8 @@ import java.util.Set;
 public class Restaurant {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
-    @GenericGenerator(name="native", strategy = "native")
+    @GeneratedValue(generator = "increment")
+    @GenericGenerator(name="increment", strategy = "increment")
     int id;
 
     @Column(name="name")

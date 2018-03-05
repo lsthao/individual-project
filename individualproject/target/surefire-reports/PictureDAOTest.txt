@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: PictureDAOTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.8 sec <<< FAILURE! - in PictureDAOTest
+getByPropertyTest  Time elapsed: 0.031 sec  <<< ERROR!
+java.lang.IllegalArgumentException: Unable to locate Attribute  with the the given name [Username] on this ManagedType [edu.matc.entity.Picture]
+	at PictureDAOTest.getByPropertyTest(PictureDAOTest.java:66)
+

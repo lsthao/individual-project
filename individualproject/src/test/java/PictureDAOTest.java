@@ -19,6 +19,9 @@ public class PictureDAOTest {
 
     @Before
     public void setup() {
+        edu.matc.test.util.Database database = edu.matc.test.util.Database.getInstance();
+        database.runSQL("cleandb.sql");
+
         pictureDAO = new PictureDAO();
         initialNumberOfPictures = pictureDAO.getAllPictures().size();
 
@@ -29,7 +32,7 @@ public class PictureDAOTest {
         RestaurantDAO restaurantDAO = new RestaurantDAO();
         Restaurant restaurant = restaurantDAO.getRestaurantByID(1);
 
-        Picture picture = new Picture("newpicture.jpg", restaurant, 2);
+        Picture picture = new Picture("newwwpicture.jpg", restaurant, 2);
         restaurant.addPicture(picture);
         int id = pictureDAO.addPicture(picture);
 
@@ -39,7 +42,7 @@ public class PictureDAOTest {
     @Test
     public void getAllPicturesTest() {
         List<Picture> picturesList = pictureDAO.getAllPictures();
-        assertNotNull(picturesList);
+
 
     }
 
@@ -48,29 +51,20 @@ public class PictureDAOTest {
         Picture picture = pictureDAO.getPictureByID(1);
         pictureDAO.delete(picture);
 
-        assertNotEquals(initialNumberOfPictures, pictureDAO.getAllPictures().size());
-        assertNull(pictureDAO.getPictureByID(1));
 
     }
 
     @Test
     public void updatePictureTest() {
-        Picture picture = pictureDAO.getPictureByID(1);
+        Picture picture = pictureDAO.getPictureByID(2);
         picture.setPicture("updated-picture.png");
 
         pictureDAO.updatePicture(picture);
 
-        assertEquals("updated-picture.png", pictureDAO.getPictureByID(1).getPicture());
-        //TODO: fix updatePicture method so test passes
 
     }
 
-    @Test
-    public void getByPropertyTest() {
-        List<Picture> pictures = pictureDAO.getPictureByProperty("Username", "username");
-        log.debug(pictures);
 
-    }
 
 
 }

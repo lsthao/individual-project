@@ -1,4 +1,5 @@
-/home/student/Enterprise/individual-project/individualproject/src/main/java/edu/matc/entity/Picture.java
-/home/student/Enterprise/individual-project/individualproject/src/main/java/edu/matc/entity/Restaurant.java
-/home/student/Enterprise/individual-project/individualproject/src/main/java/edu/matc/persistence/SessionFactoryProvider.java
-/home/student/Enterprise/individual-project/individualproject/src/main/java/edu/matc/persistence/PictureDAO.java
+/home/student/individual-project/individualproject/src/main/java/edu/matc/entity/Restaurant.java
+/home/student/individual-project/individualproject/src/main/java/edu/matc/persistence/PictureDAO.java
+/home/student/individual-project/individualproject/src/main/java/edu/matc/persistence/RestaurantDAO.java
+/home/student/individual-project/individualproject/src/main/java/edu/matc/entity/Picture.java
+/home/student/individual-project/individualproject/src/main/java/edu/matc/persistence/SessionFactoryProvider.java
