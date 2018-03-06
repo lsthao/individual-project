@@ -1,18 +1,4 @@
-# Tables
+# Database Design
+![Database Design](databasedesign.png)
 
-## Pictures
-+ PictureID 
-+ Picture 
-+ RestaurantID 
-+ User
-
-## Restaurant
-+ RestaurantID 
-+ RestaurantName 
-+ RestaurantLocation 
-+ RestaurantPhoneNumber
-
-## Users
-
-## User Roles
-
+need to figure out how to incorporate multiple users (possibly?)
