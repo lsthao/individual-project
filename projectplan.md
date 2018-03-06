@@ -44,6 +44,7 @@
 
 
 ### Week 9
+- [ ] set up database on aws
 - [ ] find or create simple html template for web pages
 - [ ] all pictures data displayed on index page
 - [ ] Add functionality to "view more" on individual picture
@@ -55,20 +56,24 @@
 - [ ] delete picture on individual picture page
 - [ ] create form on jsp to submit picture
 
+
 ### Week 11
 - [ ] Add servlet to submit picture
 - [ ] update picture
 - [ ] amazon recognition 
 
+
 ### Week 12
-- [ ] work on implementing apis
 - [ ] fix jsps to look nice
 
 ### Week 13
 - [ ] View photos by user (?)
+
 ### Week 14
+- [ ] individual code reviews
 
 ### Week 15
+- [ ] presentations - finish up any work
 
 ### Week 16
-
+- [ ] presentations - finish up any work
