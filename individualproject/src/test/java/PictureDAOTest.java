@@ -5,6 +5,7 @@ import edu.matc.persistence.RestaurantDAO;
 import org.apache.log4j.Logger;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
 
 import java.util.List;
 
@@ -36,30 +37,53 @@ public class PictureDAOTest {
         restaurant.addPicture(picture);
         int id = pictureDAO.addPicture(picture);
 
+        Picture insertedPicture = pictureDAO.getPictureByID(id);
+        assertEquals("newwwpicture.jpg", insertedPicture.getPicture());
+        assertEquals(restaurant.getName(), insertedPicture.getRestaurant().getName());
+        assertEquals(2,insertedPicture.getUserID());
+
 
     }
 
     @Test
     public void getAllPicturesTest() {
         List<Picture> picturesList = pictureDAO.getAllPictures();
-
+        assertNotNull(picturesList);
+        assertEquals(initialNumberOfPictures, picturesList.size());
 
     }
 
     @Test
     public void deletePictureTest() {
-        Picture picture = pictureDAO.getPictureByID(1);
+        Picture picture = pictureDAO.getPictureByID(3);
         pictureDAO.delete(picture);
+        assertNull(pictureDAO.getPictureByID(3));
 
 
     }
 
     @Test
     public void updatePictureTest() {
+
+        String newPictureName = "updated-picture.png";
         Picture picture = pictureDAO.getPictureByID(2);
-        picture.setPicture("updated-picture.png");
+        picture.setPicture(newPictureName);
+        picture.setUserID(1);
 
         pictureDAO.updatePicture(picture);
+
+        Picture updatedPicture = pictureDAO.getPictureByID(2);
+
+        assertEquals(newPictureName, updatedPicture.getPicture());
+        assertEquals(1, updatedPicture.getUserID());
+
+    }
+
+    @Test
+    public void getPictureByID() {
+        Picture picture = pictureDAO.getPictureByID(1);
+        assertNotNull(picture);
+        assertEquals("picture1.jpg", picture.getPicture());
 
 
     }

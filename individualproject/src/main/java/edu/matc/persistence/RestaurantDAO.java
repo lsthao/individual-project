@@ -88,23 +88,6 @@ public class RestaurantDAO {
     }
 
 
-    /**
-     * Get restaurant by property
-     */
 
-    public List<Restaurant> getRestaurantByProperty(String propertyName, String value) {
-        Session session = sessionFactory.openSession();
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<Restaurant> query = builder.createQuery(Restaurant.class);
-        Root<Restaurant> root = query.from(Restaurant.class);
-        Expression<String> propertyPath = root.get(propertyName);
-
-        query.where(builder.like(propertyPath, "%" + value + "%"));
-
-        List<Restaurant> restaurants = session.createQuery( query ).getResultList();
-        session.close();
-        return restaurants;
-
-    }
 
 }

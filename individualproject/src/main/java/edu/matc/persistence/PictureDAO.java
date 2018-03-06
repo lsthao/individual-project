@@ -56,6 +56,7 @@ public class PictureDAO {
         session.saveOrUpdate(picture);
         transaction.commit();
         session.close();
+
     }
 
     /**
@@ -88,23 +89,5 @@ public class PictureDAO {
     }
 
 
-    /**
-     * Get picture by property
-     */
-
-    public List<Picture> getPictureByProperty(String propertyName, String value) {
-        Session session = sessionFactory.openSession();
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<Picture> query = builder.createQuery(Picture.class);
-        Root<Picture> root = query.from(Picture.class);
-        Expression<String> propertyPath = root.get(propertyName);
-
-        query.where(builder.like(propertyPath, "%" + value + "%"));
-
-        List<Picture> pictures = session.createQuery( query ).getResultList();
-        session.close();
-        return pictures;
-
-    }
 
 }
