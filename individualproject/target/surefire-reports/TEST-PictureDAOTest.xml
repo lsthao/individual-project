@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="PictureDAOTest" time="2.8" tests="5" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="PictureDAOTest" time="4.374" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2017.2.6"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -60,13 +60,8 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="getAllPicturesTest" classname="PictureDAOTest" time="2.298"/>
-  <testcase name="deletePictureTest" classname="PictureDAOTest" time="0.116"/>
-  <testcase name="addTest" classname="PictureDAOTest" time="0.103"/>
-  <testcase name="getByPropertyTest" classname="PictureDAOTest" time="0.031">
-    <error message="Unable to locate Attribute  with the the given name [Username] on this ManagedType [edu.matc.entity.Picture]" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Unable to locate Attribute  with the the given name [Username] on this ManagedType [edu.matc.entity.Picture]
-	at PictureDAOTest.getByPropertyTest(PictureDAOTest.java:66)
-</error>
-  </testcase>
-  <testcase name="updatePictureTest" classname="PictureDAOTest" time="0.121"/>
+  <testcase name="getAllPicturesTest" classname="PictureDAOTest" time="3.741"/>
+  <testcase name="deletePictureTest" classname="PictureDAOTest" time="0.233"/>
+  <testcase name="addTest" classname="PictureDAOTest" time="0.141"/>
+  <testcase name="updatePictureTest" classname="PictureDAOTest" time="0.094"/>
 </testsuite>

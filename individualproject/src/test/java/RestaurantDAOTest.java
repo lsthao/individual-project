@@ -19,7 +19,8 @@ public class RestaurantDAOTest {
 
     @Before
     public void setup() {
-
+        edu.matc.test.util.Database database = edu.matc.test.util.Database.getInstance();
+        database.runSQL("cleandb.sql");
         restaurantDAO = new RestaurantDAO();
     }
 

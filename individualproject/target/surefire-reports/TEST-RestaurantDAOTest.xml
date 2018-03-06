@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="RestaurantDAOTest" time="0.123" tests="5" errors="3" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="RestaurantDAOTest" time="0.511" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2017.2.6"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -60,23 +60,9 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="addWithPictureTest" classname="RestaurantDAOTest" time="0.011">
-    <error message="could not execute statement" type="org.hibernate.exception.ConstraintViolationException">org.hibernate.exception.ConstraintViolationException: could not execute statement
-	at RestaurantDAOTest.addWithPictureTest(RestaurantDAOTest.java:31)
-Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'new restaurant name' for key 'Restaurant_name_uindex'
-	at RestaurantDAOTest.addWithPictureTest(RestaurantDAOTest.java:31)
-</error>
-  </testcase>
-  <testcase name="getRestaurantByID" classname="RestaurantDAOTest" time="0.009"/>
-  <testcase name="getAllRestaurants" classname="RestaurantDAOTest" time="0.047"/>
-  <testcase name="deleteRestaurant" classname="RestaurantDAOTest" time="0.014">
-    <error message="attempt to create delete event with null entity" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: attempt to create delete event with null entity
-	at RestaurantDAOTest.deleteRestaurant(RestaurantDAOTest.java:60)
-</error>
-  </testcase>
-  <testcase name="updateRestaurant" classname="RestaurantDAOTest" time="0.037">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at RestaurantDAOTest.updateRestaurant(RestaurantDAOTest.java:51)
-</error>
-  </testcase>
+  <testcase name="addWithPictureTest" classname="RestaurantDAOTest" time="0.103"/>
+  <testcase name="getRestaurantByID" classname="RestaurantDAOTest" time="0.112"/>
+  <testcase name="getAllRestaurants" classname="RestaurantDAOTest" time="0.11"/>
+  <testcase name="deleteRestaurant" classname="RestaurantDAOTest" time="0.055"/>
+  <testcase name="updateRestaurant" classname="RestaurantDAOTest" time="0.127"/>
 </testsuite>
