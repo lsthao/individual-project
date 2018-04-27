@@ -9,53 +9,71 @@
 
 ### Week 4
 - [X] Project structure
-- [ ] Create jsp templates
+- [X] Create jsp templates
 - [X] Create database
 - [ ] Determine independent research topic
 - [X] Set up logging
-- [ ] Set up unit testing
+- [X] Set up unit testing
 
 ### Week 5
 - [X] Add Hibernate config
 - [X] Create entities and start DAO's
-- [ ] Add unit tests for DAOs
-- [ ] Create log in home page
+- [X] Add unit tests for DAOs
+- [X] Create log in home page
 
 
 ### Week 6
-- [ ] Do checkpoint 2 by next week:
-- [ ] DAO's implemented with Hibernate
-- [ ] Log4J is implemented
-- [ ] class design/other diagrams created
+- [X] Do checkpoint 2 by next week:
+- [X] DAO's implemented with Hibernate
+- [X] Log4J is implemented
+- [X] class design/other diagrams created
 
 ### Week 7
-- [ ] Add security authentication
-- [ ] All hibernate relationships mapped out
-- [ ] Complete all DAO unit tests to pass full CRUD
-- [ ] Create index home page
+- [X] Add security authentication
+- [X] All hibernate relationships mapped out
+- [X] Complete all DAO unit tests to pass full CRUD
 
 ### Week 8
-- [ ] Checkpoint 3:
-- [ ] Deployed to AWS
-- [ ] Display pictures as blog posts on index
-- [ ] Add functionality to submit pictures
+- [ ] Checkpoint 3: deployed to aws, one jsp displaying data, authentication (2/3)
+- [X] Deployed to AWS
+- [ ] Generic DAOS
+- [ ] add javadoc
+- [ ] Create index home page
+- [ ] Add servlet to display data on home page
+- [ ] Start looking into and documenting ways to implement APIs (start with s3)
+
 
 ### Week 9
+- [ ] set up database on aws
+- [ ] find or create simple html template for web pages
+- [ ] all pictures data displayed on index page
 - [ ] Add functionality to "view more" on individual picture
 - [ ] Add API functionality
 
 ### Week 10
-- [ ] View photos by user (?)
-- [ ] 
+- [ ] get actual pictures displaying on index page
+- [ ] get actual pictures displaying on individual picture
+- [ ] delete picture on individual picture page
+- [ ] create form on jsp to submit picture
+
+
 ### Week 11
+- [ ] Add servlet to submit picture
+- [ ] update picture
+- [ ] amazon recognition 
+
 
 ### Week 12
+- [ ] fix jsps to look nice
 
 ### Week 13
+- [ ] View photos by user (?)
 
 ### Week 14
+- [ ] individual code reviews
 
 ### Week 15
+- [ ] presentations - finish up any work
 
 ### Week 16
-
+- [ ] presentations - finish up any work
