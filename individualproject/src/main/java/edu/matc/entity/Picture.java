@@ -16,6 +16,9 @@ public class Picture {
     @Column(name="Picture")
     private String picture;
 
+    @Column(name="comment")
+    private String comment;
+
     @ManyToOne
     private Restaurant restaurant;
 
@@ -64,5 +67,12 @@ public class Picture {
 
     public void setUserID(int userID) {
         this.userID = userID;
+    }
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
     }
 }

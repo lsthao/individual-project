@@ -10,8 +10,26 @@
       <user-name>root</user-name>
       <introspection-schemas>*:foodpictures</introspection-schemas>
     </data-source>
-    <data-source name="foodpicturestest@localhost" uuid="f87eb355-ac0e-45d8-9b29-6108cfca4356">
+    <data-source name="@aws" uuid="a0fa951c-327b-4cfb-857c-5655528ab38a">
       <database-info product="MySQL" version="5.7.21-0ubuntu0.16.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.45 ( Revision: 9131eefa398531c7dc98776e8a3fe839e544c5b2 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>*:foodpicturestest</introspection-schemas>
+      <ssh-properties>
+        <enabled>true</enabled>
+        <proxy-host>18.222.94.222</proxy-host>
+        <proxy-port>22</proxy-port>
+        <user>ubuntu</user>
+        <use-password>false</use-password>
+        <private-key-path>$USER_HOME$/Downloads/Lejas-Instance.pem</private-key-path>
+      </ssh-properties>
+    </data-source>
+    <data-source name="foodpicturestest@localhost" uuid="b78c2f37-140d-4173-a64f-fb3be9777db7">
+      <database-info product="MySQL" version="5.7.22-0ubuntu0.16.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.45 ( Revision: 9131eefa398531c7dc98776e8a3fe839e544c5b2 )">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>

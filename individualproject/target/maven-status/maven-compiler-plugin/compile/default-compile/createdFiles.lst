@@ -1,4 +1,5 @@
-edu/matc/persistence/PictureDAO.class
+edu/matc/controller/AllPictures.class
+edu/matc/controller/IndividualPicture.class
 edu/matc/persistence/SessionFactoryProvider.class
 edu/matc/entity/Picture.class
 edu/matc/entity/Restaurant.class

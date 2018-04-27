@@ -1,19 +1,17 @@
 import edu.matc.entity.Picture;
 import edu.matc.entity.Restaurant;
-import edu.matc.persistence.PictureDAO;
-import edu.matc.persistence.RestaurantDAO;
+import edu.matc.persistence.GenericDAO;
 import org.apache.log4j.Logger;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.BeforeEach;
 
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class PictureDAOTest {
+public class GenericPictureDAOTest {
 
-    PictureDAO pictureDAO;
+    GenericDAO pictureDAO;
     int initialNumberOfPictures;
 
     private Logger log = Logger.getLogger(this.getClass());
@@ -23,31 +21,34 @@ public class PictureDAOTest {
         edu.matc.test.util.Database database = edu.matc.test.util.Database.getInstance();
         database.runSQL("cleandb.sql");
 
-        pictureDAO = new PictureDAO();
-        initialNumberOfPictures = pictureDAO.getAllPictures().size();
+        pictureDAO = new GenericDAO(Picture.class);
+        initialNumberOfPictures = pictureDAO.getAll().size();
 
     }
 
     @Test
     public void addTest() {
-        RestaurantDAO restaurantDAO = new RestaurantDAO();
-        Restaurant restaurant = restaurantDAO.getRestaurantByID(1);
+        GenericDAO restaurantDAO = new GenericDAO(Restaurant.class);
+        Restaurant restaurant = (Restaurant) restaurantDAO.getByID(1);
 
         Picture picture = new Picture("newwwpicture.jpg", restaurant, 2);
         restaurant.addPicture(picture);
-        int id = pictureDAO.addPicture(picture);
+        int id = pictureDAO.add(picture);
 
-        Picture insertedPicture = pictureDAO.getPictureByID(id);
+        Picture insertedPicture = (Picture) pictureDAO.getByID(id);
         assertEquals("newwwpicture.jpg", insertedPicture.getPicture());
         assertEquals(restaurant.getName(), insertedPicture.getRestaurant().getName());
-        assertEquals(2,insertedPicture.getUserID());
-
+        assertEquals(2, insertedPicture.getUserID());
 
     }
 
+
+
+
     @Test
     public void getAllPicturesTest() {
-        List<Picture> picturesList = pictureDAO.getAllPictures();
+        List<Picture> picturesList = pictureDAO.getAll();
+        System.out.println(picturesList);
         assertNotNull(picturesList);
         assertEquals(initialNumberOfPictures, picturesList.size());
 
@@ -55,9 +56,9 @@ public class PictureDAOTest {
 
     @Test
     public void deletePictureTest() {
-        Picture picture = pictureDAO.getPictureByID(3);
+        Picture picture = (Picture)pictureDAO.getByID(3);
         pictureDAO.delete(picture);
-        assertNull(pictureDAO.getPictureByID(3));
+        assertNull(pictureDAO.getByID(3));
 
 
     }
@@ -65,14 +66,14 @@ public class PictureDAOTest {
     @Test
     public void updatePictureTest() {
 
-        String newPictureName = "updated-picture.png";
-        Picture picture = pictureDAO.getPictureByID(2);
+        String newPictureName = "https://www.theblackpeppercorn.com/wp-content/uploads/2011/07/pad-thai.jpg";
+        Picture picture = (Picture)pictureDAO.getByID(2);
         picture.setPicture(newPictureName);
         picture.setUserID(1);
 
-        pictureDAO.updatePicture(picture);
+        pictureDAO.update(picture);
 
-        Picture updatedPicture = pictureDAO.getPictureByID(2);
+        Picture updatedPicture = (Picture)pictureDAO.getByID(2);
 
         assertEquals(newPictureName, updatedPicture.getPicture());
         assertEquals(1, updatedPicture.getUserID());
@@ -81,14 +82,11 @@ public class PictureDAOTest {
 
     @Test
     public void getPictureByID() {
-        Picture picture = pictureDAO.getPictureByID(1);
+        Picture picture = (Picture)pictureDAO.getByID(1);
         assertNotNull(picture);
-        assertEquals("picture1.jpg", picture.getPicture());
+        assertEquals("https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Meatball_pizza.jpg/1200px-Meatball_pizza.jpg", picture.getPicture());
 
 
     }
-
-
-
 
 }

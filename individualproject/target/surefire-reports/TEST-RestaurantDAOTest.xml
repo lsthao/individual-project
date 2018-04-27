@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="RestaurantDAOTest" time="0.511" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="RestaurantDAOTest" time="1.213" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2017.2.6"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -31,7 +31,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="4.4.0-112-generic"/>
+    <property name="os.version" value="4.4.0-116-generic"/>
     <property name="user.home" value="/home/student"/>
     <property name="user.timezone" value="America/Chicago"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
@@ -60,9 +60,9 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="addWithPictureTest" classname="RestaurantDAOTest" time="0.103"/>
-  <testcase name="getRestaurantByID" classname="RestaurantDAOTest" time="0.112"/>
-  <testcase name="getAllRestaurants" classname="RestaurantDAOTest" time="0.11"/>
-  <testcase name="deleteRestaurant" classname="RestaurantDAOTest" time="0.055"/>
-  <testcase name="updateRestaurant" classname="RestaurantDAOTest" time="0.127"/>
+  <testcase name="addWithPictureTest" classname="RestaurantDAOTest" time="0.522"/>
+  <testcase name="getRestaurantByID" classname="RestaurantDAOTest" time="0.188"/>
+  <testcase name="getAllRestaurants" classname="RestaurantDAOTest" time="0.164"/>
+  <testcase name="deleteRestaurant" classname="RestaurantDAOTest" time="0.156"/>
+  <testcase name="updateRestaurant" classname="RestaurantDAOTest" time="0.18"/>
 </testsuite>
