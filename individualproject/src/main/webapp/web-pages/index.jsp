@@ -1,6 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <title>Food Pictures</title>
     <meta charset="utf-8">
@@ -8,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <c:import url="dynamic-form.jsp"/>
     <style>
         .img {
             height: 450px;
@@ -59,8 +58,7 @@
             <c:import url="picture-div.jsp"/>
         </div>
         <div class="col-sm-4">
-            <h2>Submit Picture</h2>
-                <c:import url="picture-form.jsp"/>
+            <c:import url="picture-form.jsp"/>
             <hr class="d-sm-none">
         </div>
     </div>
@@ -71,4 +69,6 @@
 </div>
 
 </body>
+
+
 </html>

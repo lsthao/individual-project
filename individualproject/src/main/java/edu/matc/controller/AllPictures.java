@@ -1,6 +1,7 @@
 package edu.matc.controller;
 
 import edu.matc.entity.Picture;
+import edu.matc.entity.Restaurant;
 import edu.matc.persistence.GenericDAO;
 import org.apache.log4j.Logger;
 
@@ -24,12 +25,17 @@ public class AllPictures extends HttpServlet{
             ServletException, IOException {
         HttpSession session = request.getSession();
 
+        //getting all restaurants for select dropdown
+        GenericDAO restaurantDAO = new GenericDAO(Restaurant.class);
+        List<Restaurant> allRestaurants = restaurantDAO.getAll();
+
+        //getting all pictures to display on homepage
         GenericDAO pictureDAO = new GenericDAO(Picture.class);
         List<Picture> allPictures = pictureDAO.getAll();
-        String testString = "test";
 
-        session.setAttribute("test", testString);
+        session.setAttribute("restaurants", allRestaurants);
         session.setAttribute("pictures", allPictures);
+
         String url = "/web-pages/index.jsp";
 
         RequestDispatcher dispatcher =
