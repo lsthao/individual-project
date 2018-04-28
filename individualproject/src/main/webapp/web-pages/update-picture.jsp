@@ -1,65 +1,74 @@
-<%@ page isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
     <title>Food Pictures</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .img {
+            width: 100%;
+            text-align: center;
+
+        }
+
+        img {
+            padding: 50px;
+        }
+
+        .picture-link {
+            padding: 5px;
+        }
+    </style>
 </head>
-
 <body>
-<!-- A grey horizontal navbar that becomes vertical on small screens -->
-<nav class="navbar navbar-expand-sm bg-dark">
-    <!-- Links -->
-    <ul class="navbar-nav">
-        <a class="navbar-brand" href="/individualproject">Food Pictures</a>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Sign Out</a>
-        </li>
 
-    </ul>
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <h1>Food Pictures</h1>
+
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="/individualproject">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="">Sign Out</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 
-<div class="container ">
+<div class="container" style="margin-top:30px">
+
     <div class="row">
+        <form method="post" action="updatePicture">
         <div class="col-sm-7">
-            <div class="row">
-                <div class="col-sm-2">
-                    Date
-                </div>
-                <div class="col-sm-10">
-                    <img src="${picture.picture}" width="400px" height="400px">
-                </div>
+            <input id="${picture.restaurant.name}" name="${picture.restaurant.name}" value="${picture.restaurant.name}">
+            <h5>date</h5>
+            <div class="img bg-dark">
+                <img src="${picture.picture}" width="70%">
+                <textarea id="comment" name="comment" class="form-control" cols="30" rows="10">${picture.comment}</textarea>
             </div>
-            <div class="row">
-                <div class="col-sm-2">
-
-                </div>
-                <div class="col-sm-10">
-                    <p>${picture.comment}</p>
-                    <a href="/individualpictures?ID=${picture.id}">Link</a>
-                </div>
-            </div>
-
         </div>
-        <div class="col-sm-5">second column</div>
+        <div class="col-sm-5">
+            <h4>Location:</h4>
+            <input id ="${picture.restaurant.location}" name="${picture.restaurant.location}" value="${picture.restaurant.location}">
+            <h4>Phone Number:</h4>
+            <input id="${picture.restaurant.phoneNumber}" name="${picture.restaurant.phoneNumber}" value="${picture.restaurant.phoneNumber}">
+            <hr class="d-sm-none">
+        </div>
+        </form>
     </div>
 </div>
 
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"/>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"/>
-
-
 </body>
+
 
 </html>

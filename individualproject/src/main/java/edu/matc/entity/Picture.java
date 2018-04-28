@@ -29,8 +29,9 @@ public class Picture {
 
     }
 
-    public Picture(String picture, Restaurant restaurant, int userID) {
+    public Picture(String picture, String comment, Restaurant restaurant, int userID) {
         this.picture = picture;
+        this.comment = comment;
         this.restaurant = restaurant;
         this.userID=userID;
 

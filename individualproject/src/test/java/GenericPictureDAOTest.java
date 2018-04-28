@@ -31,7 +31,7 @@ public class GenericPictureDAOTest {
         GenericDAO restaurantDAO = new GenericDAO(Restaurant.class);
         Restaurant restaurant = (Restaurant) restaurantDAO.getByID(1);
 
-        Picture picture = new Picture("newwwpicture.jpg", restaurant, 2);
+        Picture picture = new Picture("newwwpicture.jpg", "comment",restaurant, 2);
         restaurant.addPicture(picture);
         int id = pictureDAO.add(picture);
 

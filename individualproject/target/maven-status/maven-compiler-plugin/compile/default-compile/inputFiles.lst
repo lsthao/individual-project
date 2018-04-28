@@ -1,7 +1,8 @@
-/home/student/individual-project/individualproject/src/main/java/edu/matc/controller/UpdatePicture.java
 /home/student/individual-project/individualproject/src/main/java/edu/matc/persistence/GenericDAO.java
 /home/student/individual-project/individualproject/src/main/java/edu/matc/entity/Restaurant.java
+/home/student/individual-project/individualproject/src/main/java/edu/matc/controller/SubmitPicture.java
 /home/student/individual-project/individualproject/src/main/java/edu/matc/controller/IndividualPicture.java
 /home/student/individual-project/individualproject/src/main/java/edu/matc/controller/AllPictures.java
+/home/student/individual-project/individualproject/src/main/java/edu/matc/controller/UpdatePictureView.java
 /home/student/individual-project/individualproject/src/main/java/edu/matc/entity/Picture.java
 /home/student/individual-project/individualproject/src/main/java/edu/matc/persistence/SessionFactoryProvider.java

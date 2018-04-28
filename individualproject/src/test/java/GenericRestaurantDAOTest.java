@@ -28,7 +28,7 @@ public class GenericRestaurantDAOTest {
     @Test
     public void addWithPictureTest() {
         Restaurant restaurant = new Restaurant("a new restaurant name", "restaurant location", "123-334-5322");
-        Picture picture = new Picture("anewpicture.jpg", restaurant, 2);
+        Picture picture = new Picture("anewpicture.jpg", "comment", restaurant, 2);
         restaurant.addPicture(picture);
         int id = restaurantDAO.add(restaurant);
 
@@ -80,6 +80,13 @@ public class GenericRestaurantDAOTest {
         Restaurant restaurant = (Restaurant)restaurantDAO.getByID(3);
         restaurantDAO.delete(restaurant);
         assertNull(restaurantDAO.getByID(3));
+    }
+
+    @Test
+    public void getRestaurantByProperty() {
+        Restaurant restaurant = (Restaurant)restaurantDAO.getByPropertyEqual("name", "restaurant1").get(0);
+
+        System.out.println(restaurant.getId());
     }
 
 }

@@ -1,23 +1,24 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="addMessage" scope="session" value="${addSuccessMessage}"/>
+<p>${addMessage}</p>
 <h2>Submit Picture</h2>
-<form id="picture-form">
+<form action="submitPicture" method="POST" id="picture-form">
     <div class="form-group">
         <label for="picture-url">Picture URL</label>
-        <input type="text" class="form-control" id="picture-url">
+        <input type="text" class="form-control" id="picture-url" name="picture-url">
     </div>
     <div class="form-group">
-        <label for="picture-url">Comment</label>
-        <textarea id="comment" class="form-control" cols="30" rows="10"></textarea>
+        <label for="comment">Comment</label>
+        <textarea id="comment" name="comment" class="form-control" cols="30" rows="10"></textarea>
     </div>
     <div class="form-group">
-        <label for="restaurant">Restaurant</label>
-        <input type="text" class="form-control" id="restaurant">
+        <label for="restaurant-name">Restaurant Name</label>
+        <select id="restaurant-name" name="restaurant-name">
+            <c:forEach items="${restaurants}" var="restaurant">
+                <option id="${restaurant.name}" name="${restaurant.name}">${restaurant.name}</option>
+            </c:forEach>
+            <option id="add-new" name="add-new">Add New</option>
+        </select>
     </div>
-    <select id="restaurant-name">
-        <c:forEach items="${restaurants}" var="restaurant">
-            <option id="${restaurant.id}">${restaurant.name}</option>
-        </c:forEach>
-        <option id="add-new}">Add New</option>
-    </select>
 
 </form>

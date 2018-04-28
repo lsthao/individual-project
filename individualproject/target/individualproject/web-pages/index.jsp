@@ -10,19 +10,20 @@
     <c:import url="dynamic-form.jsp"/>
     <style>
         .img {
-            height: 450px;
+            height: 500px;
             width: 450px;
             text-align: center;
 
         }
 
         img {
-            padding: 50px;
+            padding: 30px;
         }
 
-        .picture-link {
-            padding: 5px;
+        #picture-comment {
+            color: white;
         }
+
     </style>
 </head>
 <body>
@@ -33,18 +34,12 @@
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="/individualproject">Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="/individualproject">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/addPicture">Submit Picture</a>
-            </li>
             <li class="nav-item">
                 <a class="nav-link" href="">Sign Out</a>
             </li>
@@ -57,15 +52,11 @@
         <div class="col-sm-7">
             <c:import url="picture-div.jsp"/>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-5">
             <c:import url="picture-form.jsp"/>
             <hr class="d-sm-none">
         </div>
     </div>
-</div>
-
-<div class="jumbotron text-center" style="margin-bottom:0">
-    <p>Footer</p>
 </div>
 
 </body>

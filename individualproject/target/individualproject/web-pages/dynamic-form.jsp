@@ -1,58 +1,84 @@
 <script>
     $(document).ready(function() {
 
-        alert("test hello");
-
         $("#restaurant-name").change(function(){
 
             var value = $(this).val();
 
             if (value == "Add New") {
+
+                var $newRestaurantDiv = $('<div id="new-restaurant"></div>');
+
+                var $newRestaurantNameDiv = $('<div class="form-group"></div>');
+                var $newRestaurantNameLabel = $('<label for="new-restaurant-name">Restaurant Name:</label>');
+                var $newRestaurantNameInput = $('<input type="text" class="form-control" name="new-restaurant-name" id="new-restaurant-name">');
+
+                $newRestaurantNameDiv.append($newRestaurantNameLabel);
+                $newRestaurantNameDiv.append($newRestaurantNameInput);
+                $newRestaurantDiv.append($newRestaurantNameDiv);
+
                 var $streetAddressDiv = $('<div class="form-group"></div>');
                 var $streetAddressLabel = $('<label for="street-address">Street Address:</label>');
-                var $streetAddressInput = $('<input type="text" class="form-control" id="street-address">');
+                var $streetAddressInput = $('<input type="text" class="form-control" name="street-address" id="street-address">');
 
                 $streetAddressDiv.append($streetAddressLabel);
                 $streetAddressDiv.append($streetAddressInput);
-                $("#picture-form").append($streetAddressDiv);
+                $newRestaurantDiv.append($streetAddressDiv);
 
                 var $cityDiv = $('<div class="form-group"></div>');
                 var $cityLabel = $('<label for="city">City:</label>');
-                var $cityInput = $('<input type="text" class="form-control" id="city">');
+                var $cityInput = $('<input type="text" class="form-control" id="city" name="city">');
 
                 $cityDiv.append($cityLabel);
                 $cityDiv.append($cityInput);
-                $("#picture-form").append($cityDiv);
+                $newRestaurantDiv.append($cityDiv);
 
                 var $stateDiv = $('<div class="form-group"></div>');
                 var $stateLabel = $('<label for="state">State:</label>');
-                var $stateInput = $('<input type="text" class="form-control" id="state">');
+                var $stateInput = $('<input type="text" class="form-control" id="state" name="state">');
 
                 $stateDiv.append($stateLabel);
                 $stateDiv.append($stateInput);
-                $("#picture-form").append($stateDiv);
+                $newRestaurantDiv.append($stateDiv);
 
                 var $zipCodeDiv = $('<div class="form-group"></div>');
                 var $zipCodeLabel = $('<label for="zip-code">Zip Code:</label>');
-                var $zipCodeInput =  $('<input type="text" class="form-control" id="zip-code">');
+                var $zipCodeInput =  $('<input type="text" class="form-control" id="zip-code" name="zip-code">');
 
                 $zipCodeDiv.append($zipCodeLabel);
                 $zipCodeDiv.append($zipCodeInput);
-                $("#picture-form").append($zipCodeDiv);
+                $newRestaurantDiv.append($zipCodeDiv);
 
-                var $websiteDiv = $('<div class="form-group"></div>');
-                var $websiteLabel = $('<label for="website">Web Site:</label>');
-                var $websiteInput = $('<input type="text" class="form-control" id="website">');
+                var $phoneDiv = $('<div class="form-group"></div>');
+                var $phoneLabel = $('<label for="phone-number">Phone Number:</label>');
+                var $phoneInput = $('<input type="text" class="form-control" id="phone-number" name="phone-number">');
 
-                $websiteDiv.append($websiteLabel);
-                $websiteDiv.append($websiteInput);
-                $("#picture-form").append($websiteDiv);
+                $phoneDiv.append($phoneLabel);
+                $phoneDiv.append($phoneInput);
+                $newRestaurantDiv.append($phoneDiv);
+
+                $("#picture-form").append($newRestaurantDiv);
+
+            } else {
+
+                $("#new-restaurant").remove();
 
             }
 
-            var $submitbutton = $('<input type="submit">');
+            if (!$("#submitbutton").length) {
+                var $submitbutton = $('<input type="submit">');
+                $submitbutton.attr("id", "submitbutton");
+                $("#picture-form").append($submitbutton);
+            } else {
+                $("#submitbutton").remove();
+                var $submitbutton = $('<input type="submit">');
+                $submitbutton.attr("id", "submitbutton");
+                $("#picture-form").append($submitbutton);
 
-            $("#picture-form").append($submitbutton);
+            }
+
+
+
         });
 
 
