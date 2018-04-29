@@ -54,7 +54,11 @@
             <div class="img bg-dark">
                 <img src="${picture.picture}" width="85%">
                 <p id="picture-comment">${picture.comment}</p>
-                <a class="picture-link" href="/individualproject/updatepictureview?ID=${picture.id}">see more...</a>
+                <a class="picture-link" href="/individualproject/updatepictureview?ID=${picture.id}">edit comment</a>
+                <form action="deletePicture" method="post">
+                    <input type="hidden" name="picture-id" value="${picture.id}">
+                    <input type="submit" value="delete picture">
+                </form>
             </div>
         </div>
         <div class="col-sm-5">

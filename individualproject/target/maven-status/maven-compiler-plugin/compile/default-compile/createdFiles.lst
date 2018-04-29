@@ -3,6 +3,7 @@ edu/matc/controller/SubmitPicture.class
 edu/matc/controller/IndividualPicture.class
 edu/matc/controller/UpdatePictureView.class
 edu/matc/controller/UpdatePicture.class
+edu/matc/controller/DeletePicture.class
 edu/matc/persistence/SessionFactoryProvider.class
 edu/matc/entity/Picture.class
 edu/matc/entity/Restaurant.class
