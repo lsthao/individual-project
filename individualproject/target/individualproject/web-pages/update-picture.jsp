@@ -46,22 +46,30 @@
 </nav>
 
 <div class="container" style="margin-top:30px">
+
     <div class="row">
+
         <div class="col-sm-7">
-            <input id="${picture.restaurant.name}" name="${picture.restaurant.name}" value="${picture.restaurant.name}">
-            <h5>date</h5>
-            <div class="img bg-dark">
-                <img src="${picture.picture}" width="70%">
-                <textarea id="comment" name="comment" class="form-control" cols="30" rows="10">${picture.comment}</textarea>
-            </div>
+            <form method="post" action="updatePicture">
+                <input type="hidden" value="${picture.id}" name="picture-id" />
+                <h5>date</h5>
+                <div class="img bg-dark">
+                    <img src="${picture.picture}" width="70%">
+                    <textarea id="comment" name="comment" class="form-control" cols="30" rows="10">${picture.comment}</textarea>
+                </div>
+                <input id="submit" type="submit" value="submit changes">
+            </form>
         </div>
         <div class="col-sm-5">
+            <h2>${picture.restaurant.name}</h2>
             <h4>Location:</h4>
-            <input id ="${picture.restaurant.location}" name="${picture.restaurant.location}" value="${picture.restaurant.location}">
+            <p>${picture.restaurant.location}</p>
             <h4>Phone Number:</h4>
-            <input id="${picture.restaurant.phoneNumber}" name="${picture.restaurant.phoneNumber}" value="${picture.restaurant.phoneNumber}">
+            <p>${picture.restaurant.phoneNumber}</p>
             <hr class="d-sm-none">
         </div>
+
+
     </div>
 </div>
 
