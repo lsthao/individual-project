@@ -3,6 +3,8 @@ package edu.matc.controller;
 import edu.matc.entity.Picture;
 import edu.matc.entity.Restaurant;
 import edu.matc.persistence.GenericDAO;
+import edu.matc.util.DetectLabels;
+import edu.matc.util.UploadToS3;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -15,16 +17,31 @@ import java.io.IOException;
 @WebServlet(
         urlPatterns = {"/submitPicture"}
 )
+/**
+ * This class is used to submit a picture and add it to the database.
+ *
+ * @author
+ */
 public class SubmitPicture extends HttpServlet {
 
     Logger logger = Logger.getLogger(this.getClass());
 
+    /**
+     * This is a doPost method that gets form values and uses them to create
+     * Picture/Restaurant objects to add to the database.
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
         HttpSession session = request.getSession();
         GenericDAO pictureDAO = new GenericDAO(Picture.class);
         GenericDAO restaurantDAO = new GenericDAO(Restaurant.class);
+        UploadToS3 upload = new UploadToS3();
+        DetectLabels detect = new DetectLabels();
 
         String pictureURL = request.getParameter("picture-url");
         String comment = request.getParameter("comment");
@@ -39,30 +56,41 @@ public class SubmitPicture extends HttpServlet {
                 + state + ", "
                 + zipCode;
         String phoneNumber = request.getParameter("phone-number");
+        upload.uploadFile(pictureURL);
+        String pictureName = upload.getPhotoNameString(pictureURL);
 
-        logger.info("restaurant name here? " + comment);
-        if (!restaurantName.equals("Add New")) {
+        pictureURL = "https://s3.us-east-2.amazonaws.com/food-pictures/" + pictureName;
 
-            Restaurant restaurant = (Restaurant) restaurantDAO.getByPropertyEqual("name", restaurantName).get(0);
-            logger.info(restaurant);
-            Picture newPicture = new Picture(pictureURL, comment, restaurant, 1);
-            restaurant.addPicture(newPicture);
-            pictureDAO.add(newPicture);
+        logger.info(pictureName);
 
+        if(detect.detectLabelWithA3Object(pictureName)) {
+            if (!restaurantName.equals("Add New")) {
+
+                Restaurant restaurant = (Restaurant) restaurantDAO.getByPropertyEqual("name", restaurantName).get(0);
+                logger.info(restaurant);
+                Picture newPicture = new Picture(pictureURL, comment, restaurant, 1);
+                restaurant.addPicture(newPicture);
+                pictureDAO.add(newPicture);
+
+            } else {
+
+                Restaurant newRestaurant = new Restaurant(newRestaurantName, fullAddress, phoneNumber);
+                int id = restaurantDAO.add(newRestaurant);
+                Restaurant addedRestaurant = (Restaurant) restaurantDAO.getByID(id);
+                logger.info("inside the else?? " + comment);
+                Picture newPicture = new Picture(pictureURL, comment, addedRestaurant, 1);
+                addedRestaurant.addPicture(newPicture);
+
+                pictureDAO.add(newPicture);
+            }
+
+
+            session.setAttribute("addSuccessMessage", "Your picture has been added!");
         } else {
-
-            Restaurant newRestaurant = new Restaurant(newRestaurantName, fullAddress, phoneNumber);
-            int id = restaurantDAO.add(newRestaurant);
-            Restaurant addedRestaurant = (Restaurant) restaurantDAO.getByID(id);
-            logger.info("inside the else?? " + comment);
-            Picture newPicture = new Picture(pictureURL, comment, addedRestaurant, 1);
-            addedRestaurant.addPicture(newPicture);
-
-            pictureDAO.add(newPicture);
+            session.setAttribute("addSuccessMessage", "We are only accepting pictures of food. Please submit a new one. ");
         }
 
 
-        session.setAttribute("addSuccessMessage", "Your picture has been added!");
 
         String url = "/individualproject/";
         response.sendRedirect(url);

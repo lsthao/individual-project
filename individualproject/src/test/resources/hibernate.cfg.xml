@@ -24,6 +24,7 @@
         <mapping class="edu.matc.entity.Picture"/>
         <mapping class="edu.matc.entity.Restaurant"/>
 
+
     </session-factory>
 
 </hibernate-configuration>

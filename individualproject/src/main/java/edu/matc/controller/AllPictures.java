@@ -15,12 +15,27 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
+
+/**
+ * This class uses the GenericDAO to get all pictures and all restaurants to display on the
+ * index page.
+ *
+ * @author Leja Thao
+ */
 @WebServlet(
         urlPatterns = {"/"}
 )
 public class AllPictures extends HttpServlet{
     Logger logger = Logger.getLogger(this.getClass());
 
+    /**
+     * A doGet method that sets all pictures as an attribute to display all pictures
+     * and then sets al restaurants as an attribute for the dropdown in the submit form.
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws
             ServletException, IOException {
         HttpSession session = request.getSession();

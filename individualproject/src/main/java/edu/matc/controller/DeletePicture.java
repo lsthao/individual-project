@@ -13,12 +13,27 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+
+/**
+ * This class is used to delete a picture from the database.
+ *
+ * @author Leja Thao
+ */
 @WebServlet(
         urlPatterns = {"/deletePicture"}
 )
 public class DeletePicture extends HttpServlet {
     private Logger logger = Logger.getLogger(this.getClass());
 
+    /**
+     * This function is a doPost that gets the pictureID from the application
+     * and performs the delete operation.
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 

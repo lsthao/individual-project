@@ -14,6 +14,7 @@
     <div class="form-group">
         <label for="restaurant-name">Restaurant Name</label>
         <select id="restaurant-name" name="restaurant-name">
+            <option>select restaurant</option>
             <c:forEach items="${restaurants}" var="restaurant">
                 <option id="${restaurant.name}" name="${restaurant.name}">${restaurant.name}</option>
             </c:forEach>

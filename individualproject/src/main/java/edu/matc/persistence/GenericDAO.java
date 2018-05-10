@@ -9,7 +9,11 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
-
+/**
+ * This class is a generic DAO to peform CRUD on entities.
+ *
+ * @Author Leja Thao
+ */
 public class GenericDAO<T> {
     private Class<T> type;
     Logger logger =  Logger.getLogger(this.getClass());
@@ -26,6 +30,13 @@ public class GenericDAO<T> {
         return SessionFactoryProvider.getSessionFactory().openSession();
     }
 
+    /**
+     * This method gets an entity by it's ID
+     *
+     * @param id
+     * @param <T>
+     * @return
+     */
     public <T>T getByID(int id) {
         Session session = getSession();
         T entity = (T)session.get( type, id );
@@ -33,6 +44,11 @@ public class GenericDAO<T> {
         return entity;
     }
 
+    /**
+     * This method deletes an entity
+     *
+     * @param entity
+     */
     public void delete( T entity) {
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
@@ -41,6 +57,10 @@ public class GenericDAO<T> {
         session.close();
     }
 
+    /**
+     * This method gets all objects of this type
+     * @return
+     */
     public List<T> getAll() {
         Session session = getSession();
 
@@ -55,6 +75,12 @@ public class GenericDAO<T> {
         return entity;
     }
 
+    /**
+     * This method adds an entity.
+     *
+     * @param entity
+     * @return
+     */
     public int add(T entity) {
         int id = 0;
         Session session = getSession();
@@ -65,6 +91,11 @@ public class GenericDAO<T> {
         return id;
     }
 
+    /**
+     * This method updates an entity.
+     *
+     * @param entity
+     */
     public void update(T entity) {
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
@@ -73,7 +104,13 @@ public class GenericDAO<T> {
         session.close();
     }
 
-
+    /**
+     * This method performs a query to return a list of entities that have
+     * a property name equal to the value argument.
+     * @param propertyName
+     * @param value
+     * @return
+     */
     public List<T> getByPropertyEqual(String propertyName, String value) {
         Session session = getSession();
 

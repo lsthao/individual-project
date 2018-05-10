@@ -41,7 +41,10 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="">Sign Out</a>
+                <a class="nav-link" href="/individualproject/allRestaurants">Restaurants List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="logout">Sign Out</a>
             </li>
         </ul>
     </div>

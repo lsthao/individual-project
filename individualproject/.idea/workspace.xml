@@ -10,17 +10,80 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00963507-6ef2-4e78-9e0a-bdfe8a45e953" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/DeletePicture.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_rekognition_1_11_106.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/AllRestaurants.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/IndividualRestaurant.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/Logout.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/PicturesByRestaurant.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/SubmitPictureForRestaurant.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdateRestaurant.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdateRestaurantView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/util/DetectLabels.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/util/UploadToS3.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/web-pages/all-restaurants.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/web-pages/individual-restaurant.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/web-pages/pictures-by-restaurant.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/web-pages/restaurant-picture-form.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/web-pages/update-restaurant.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/APITest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/PictureDAOTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/RestaurantDAOTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-PictureDAOTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-RestaurantDAOTest.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/AllPictures.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/AllPictures.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/DeletePicture.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/DeletePicture.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/IndividualPicture.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/IndividualPicture.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/SubmitPicture.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/SubmitPicture.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/UpdatePicture.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/UpdatePicture.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/UpdatePictureView.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/UpdatePictureView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/persistence/GenericDAO.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/persistence/GenericDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/individualproject.war" afterPath="$PROJECT_DIR$/target/individualproject.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/individualproject/WEB-INF/classes/edu/matc/controller/AllPictures.class" afterPath="$PROJECT_DIR$/target/individualproject/WEB-INF/classes/edu/matc/controller/AllPictures.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/individualproject/WEB-INF/classes/edu/matc/controller/DeletePicture.class" afterPath="$PROJECT_DIR$/target/individualproject/WEB-INF/classes/edu/matc/controller/DeletePicture.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/individualproject/WEB-INF/classes/edu/matc/controller/IndividualPicture.class" afterPath="$PROJECT_DIR$/target/individualproject/WEB-INF/classes/edu/matc/controller/IndividualPicture.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/individualproject/WEB-INF/classes/edu/matc/controller/SubmitPicture.class" afterPath="$PROJECT_DIR$/target/individualproject/WEB-INF/classes/edu/matc/controller/SubmitPicture.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/individualproject/WEB-INF/classes/edu/matc/controller/UpdatePicture.class" afterPath="$PROJECT_DIR$/target/individualproject/WEB-INF/classes/edu/matc/controller/UpdatePicture.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/individualproject/WEB-INF/classes/edu/matc/controller/UpdatePictureView.class" afterPath="$PROJECT_DIR$/target/individualproject/WEB-INF/classes/edu/matc/controller/UpdatePictureView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/individualproject/WEB-INF/classes/edu/matc/persistence/GenericDAO.class" afterPath="$PROJECT_DIR$/target/individualproject/WEB-INF/classes/edu/matc/persistence/GenericDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/GenericPictureDAOTest.class" afterPath="$PROJECT_DIR$/target/test-classes/GenericPictureDAOTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/individualproject_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/individualproject_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/b78c2f37-140d-4173-a64f-fb3be9777db7.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/b78c2f37-140d-4173-a64f-fb3be9777db7.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/individualproject.iml" afterPath="$PROJECT_DIR$/individualproject.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/AllPictures.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/AllPictures.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/DeletePicture.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/DeletePicture.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/IndividualPicture.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/IndividualPicture.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/SubmitPicture.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/SubmitPicture.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdatePicture.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdatePicture.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdatePictureView.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdatePictureView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/GenericDAO.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/GenericDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/web-pages/dynamic-form.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/web-pages/dynamic-form.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/web-pages/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/web-pages/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/web-pages/individual-picture.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/web-pages/individual-picture.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/web-pages/picture-form.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/web-pages/picture-form.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/web-pages/update-picture.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/web-pages/update-picture.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/GenericPictureDAOTest.java" afterPath="$PROJECT_DIR$/src/test/java/GenericPictureDAOTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/cleandb.sql" afterPath="$PROJECT_DIR$/src/test/resources/cleandb.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/individualproject/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/individualproject/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/individualproject/web-pages/dynamic-form.jsp" afterPath="$PROJECT_DIR$/target/individualproject/web-pages/dynamic-form.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/individualproject/web-pages/index.jsp" afterPath="$PROJECT_DIR$/target/individualproject/web-pages/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/individualproject/web-pages/individual-picture.jsp" afterPath="$PROJECT_DIR$/target/individualproject/web-pages/individual-picture.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/individualproject/web-pages/picture-form.jsp" afterPath="$PROJECT_DIR$/target/individualproject/web-pages/picture-form.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/individualproject/web-pages/update-picture.jsp" afterPath="$PROJECT_DIR$/target/individualproject/web-pages/update-picture.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/GenericPictureDAOTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/GenericPictureDAOTest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/GenericRestaurantDAOTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/GenericRestaurantDAOTest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-GenericPictureDAOTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-GenericPictureDAOTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-GenericRestaurantDAOTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-GenericRestaurantDAOTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/cleandb.sql" afterPath="$PROJECT_DIR$/target/test-classes/cleandb.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/target/test-classes/hibernate.cfg.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,37 +135,23 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="individual-picture.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/individual-picture.jsp">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="update-restaurant.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/update-restaurant.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="58" column="57" lean-forward="false" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="57" />
+            <state relative-caret-position="222">
+              <caret line="66" column="76" lean-forward="false" selection-start-line="66" selection-start-column="76" selection-end-line="66" selection-end-column="76" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UpdatePicture.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdatePicture.java">
+      <file leaf-file-name="SubmitPicture.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/SubmitPicture.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeletePicture.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/DeletePicture.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="32" column="41" lean-forward="true" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-180">
+              <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,8 +159,50 @@
       <file leaf-file-name="update-picture.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/update-picture.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="64" column="30" lean-forward="true" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
+            <state relative-caret-position="168">
+              <caret line="62" column="16" lean-forward="false" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DetectLabels.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/util/DetectLabels.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="43" column="55" lean-forward="false" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UploadToS3.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/util/UploadToS3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="38" column="55" lean-forward="false" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="individual-restaurant.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/individual-restaurant.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="64" column="46" lean-forward="false" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UpdateRestaurant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdateRestaurant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="82">
+              <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -152,53 +243,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/submit-picture.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/topnav.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/log-in.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/individual-picture.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/SessionFactoryProvider.java" />
-        <option value="$PROJECT_DIR$/individualproject.iml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/test/java/util/Database.java" />
-        <option value="$PROJECT_DIR$/src/test/java/edu/matc/util/Database.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/database.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/edu/matc/test/util/Database.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/log-in-page.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/login-error.jsp" />
-        <option value="$PROJECT_DIR$/src/test/java/RestaurantDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/PictureDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/RestaurantDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
-        <option value="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/style.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/web-pages/style.css" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/PictureDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/GenericDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/matc/test/util/GenericPictureDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/cleandb.sql" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/Restaurant.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/PictureForm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/AllPictures.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/web-pages/scripts/custom-jquery.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/web-pages/custom-jquery.js" />
-        <option value="$PROJECT_DIR$/src/test/java/GenericPictureDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/GenericRestaurantDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/web-pages/picture-form.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/Picture.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/web-pages/dynamic-form.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/web-pages/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/IndividualPicture.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/web-pages/picture-div.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdatePictureView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/SubmitPicture.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdatePicture.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/web-pages/update-picture.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/AllRestaurants.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/web-pages/dynamic-form.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/web-pages/restaurant-picture-form.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/util/AmazonS3Handler.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RekognitionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/AllPictures.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/cleandb.sql" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/DeletePicture.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/IndividualPicture.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/IndividualRestaurant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/PicturesByRestaurant.java" />
+        <option value="$PROJECT_DIR$/src/test/java/APITest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/SubmitPicture.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/web-pages/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/web-pages/all-restaurants.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/web-pages/individual-picture.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/web-pages/pictures-by-restaurant.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/web-pages/update-picture.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/util/UploadTempImage.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/Logout.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdatePicture.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdatePictureView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/SubmitPictureForRestaurant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/GenericDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/web-pages/picture-form.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/UserRole.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/AddUser.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GenericPictureDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AddUserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/UserRoles.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdateRestaurantView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdateRestaurant.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/GenericRestaurantDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/web-pages/individual-restaurant.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/web-pages/update-restaurant.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/util/DetectLabels.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/util/UploadToS3.java" />
       </list>
     </option>
   </component>
@@ -214,6 +309,13 @@
     <option name="FILTER_INFO" value="false" />
     <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -252,6 +354,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -308,7 +412,40 @@
               <item name="individualproject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="matc" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="individualproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="individualproject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="matc" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="individualproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="individualproject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="individualproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="individualproject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="individualproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="individualproject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="individualproject" type="b2602c69:ProjectViewProjectNode" />
@@ -333,15 +470,16 @@
             </path>
             <path>
               <item name="individualproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="individualproject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -352,26 +490,27 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/movie-database-api/movie-api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/web-pages" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/admin" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
       <recent name="edu.matc" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.matc.controller" />
+      <recent name="edu.matc.test.util" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/web-pages" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="edu.matc.test.util" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/web-pages" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/admin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -387,34 +526,14 @@
     </option>
   </component>
   <component name="RunManager" selected="TomEE Server.Unnamed">
-    <configuration name="GenericRestaurantDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="APITest.detectLabelsWithExtractedPhotoName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="individualproject" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GenericRestaurantDAOTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="GenericRestaurantDAOTest.getAllRestaurants" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="individualproject" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GenericRestaurantDAOTest" />
-      <option name="METHOD_NAME" value="getAllRestaurants" />
+      <option name="MAIN_CLASS_NAME" value="APITest" />
+      <option name="METHOD_NAME" value="detectLabelsWithExtractedPhotoName" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -427,14 +546,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="GenericRestaurantDAOTest.getRestaurantByID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="APITest.detectLabelsWithS3ObjectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="individualproject" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GenericRestaurantDAOTest" />
-      <option name="METHOD_NAME" value="getRestaurantByID" />
+      <option name="MAIN_CLASS_NAME" value="APITest" />
+      <option name="METHOD_NAME" value="detectLabelsWithS3ObjectTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -447,14 +566,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="GenericRestaurantDAOTest.getRestaurantByProperty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="APITest.extractPhotoNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="individualproject" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GenericRestaurantDAOTest" />
-      <option name="METHOD_NAME" value="getRestaurantByProperty" />
+      <option name="MAIN_CLASS_NAME" value="APITest" />
+      <option name="METHOD_NAME" value="extractPhotoNameTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -467,14 +586,34 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="GenericRestaurantDAOTest.updateRestaurant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="APITest.uploadPhotoToS3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="individualproject" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GenericRestaurantDAOTest" />
-      <option name="METHOD_NAME" value="updateRestaurant" />
+      <option name="MAIN_CLASS_NAME" value="APITest" />
+      <option name="METHOD_NAME" value="uploadPhotoToS3" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="AddUserTest.addTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="individualproject" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AddUserTest" />
+      <option name="METHOD_NAME" value="addTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -645,19 +784,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="TomEE Server.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.GenericRestaurantDAOTest.getAllRestaurants" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.GenericRestaurantDAOTest.getRestaurantByID" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.GenericRestaurantDAOTest.updateRestaurant" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.GenericRestaurantDAOTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.GenericRestaurantDAOTest.getRestaurantByProperty" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.APITest.detectLabelsWithS3ObjectTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.APITest.uploadPhotoToS3" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.APITest.extractPhotoNameTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.APITest.detectLabelsWithExtractedPhotoName" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.AddUserTest.addTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.GenericRestaurantDAOTest.getRestaurantByProperty" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.GenericRestaurantDAOTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.GenericRestaurantDAOTest.updateRestaurant" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.GenericRestaurantDAOTest.getRestaurantByID" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.GenericRestaurantDAOTest.getAllRestaurants" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AddUserTest.addTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.APITest.detectLabelsWithExtractedPhotoName" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.APITest.detectLabelsWithS3ObjectTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.APITest.extractPhotoNameTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.APITest.uploadPhotoToS3" />
       </list>
     </recent_temporary>
   </component>
@@ -719,47 +858,68 @@
       <workItem from="1524842361470" duration="8127000" />
       <workItem from="1524859937931" duration="11796000" />
       <workItem from="1524887787532" duration="14393000" />
-      <workItem from="1524979948507" duration="3969000" />
+      <workItem from="1524979948507" duration="5338000" />
+      <workItem from="1525056280707" duration="4182000" />
+      <workItem from="1525139439068" duration="3104000" />
+      <workItem from="1525152040975" duration="5000" />
+      <workItem from="1525210637121" duration="7006000" />
+      <workItem from="1525580386621" duration="454000" />
+      <workItem from="1525628696455" duration="11186000" />
+      <workItem from="1525647237379" duration="2454000" />
+      <workItem from="1525662179556" duration="967000" />
+      <workItem from="1525664043307" duration="53000" />
+      <workItem from="1525755365293" duration="134000" />
+      <workItem from="1525755657106" duration="1724000" />
+      <workItem from="1525815043777" duration="217000" />
+      <workItem from="1525815305260" duration="3241000" />
+      <workItem from="1525821442715" duration="429000" />
+      <workItem from="1525827388694" duration="8170000" />
+      <workItem from="1525842842199" duration="1546000" />
+      <workItem from="1525846068897" duration="7599000" />
+      <workItem from="1525899537562" duration="1068000" />
+      <workItem from="1525901696591" duration="3866000" />
+      <workItem from="1525906546246" duration="5699000" />
+      <workItem from="1525913782380" duration="1114000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GenericPictureDAOTest_deletePictureTest - 2018.04.21 at 22h 29m 17s.xml">
-      <configuration name="GenericPictureDAOTest.deletePictureTest" configurationId="JUnit" />
+    <history-entry file="AddUserTest_addTest - 2018.05.09 at 19h 04m 29s.xml">
+      <configuration name="AddUserTest.addTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GenericPictureDAOTest_getAllPicturesTest - 2018.04.21 at 22h 26m 57s.xml">
-      <configuration name="GenericPictureDAOTest.getAllPicturesTest" configurationId="JUnit" />
+    <history-entry file="AddUserTest_addTest - 2018.05.09 at 19h 05m 26s.xml">
+      <configuration name="AddUserTest.addTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GenericPictureDAOTest_updatePictureTest - 2018.04.21 at 22h 31m 13s.xml">
-      <configuration name="GenericPictureDAOTest.updatePictureTest" configurationId="JUnit" />
+    <history-entry file="AddUserTest_addTest - 2018.05.09 at 19h 06m 36s.xml">
+      <configuration name="AddUserTest.addTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GenericRestaurantDAOTest - 2018.04.21 at 22h 44m 33s.xml">
-      <configuration name="GenericRestaurantDAOTest" configurationId="JUnit" />
+    <history-entry file="AddUserTest_addTest - 2018.05.09 at 19h 07m 27s.xml">
+      <configuration name="AddUserTest.addTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GenericRestaurantDAOTest_addWithPictureTest - 2018.04.21 at 22h 35m 41s.xml">
-      <configuration name="GenericRestaurantDAOTest.addWithPictureTest" configurationId="JUnit" />
+    <history-entry file="AddUserTest_addTest - 2018.05.09 at 19h 08m 08s.xml">
+      <configuration name="AddUserTest.addTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GenericRestaurantDAOTest_getAllRestaurants - 2018.04.21 at 22h 36m 25s.xml">
-      <configuration name="GenericRestaurantDAOTest.getAllRestaurants" configurationId="JUnit" />
+    <history-entry file="AddUserTest_addTest - 2018.05.09 at 19h 08m 51s.xml">
+      <configuration name="AddUserTest.addTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GenericRestaurantDAOTest_getRestaurantByID - 2018.04.21 at 22h 39m 26s.xml">
-      <configuration name="GenericRestaurantDAOTest.getRestaurantByID" configurationId="JUnit" />
+    <history-entry file="AddUserTest_addTest - 2018.05.09 at 19h 09m 17s.xml">
+      <configuration name="AddUserTest.addTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GenericRestaurantDAOTest_getRestaurantByProperty - 2018.04.28 at 01h 13m 35s.xml">
-      <configuration name="GenericRestaurantDAOTest.getRestaurantByProperty" configurationId="JUnit" />
+    <history-entry file="AddUserTest_addTest - 2018.05.09 at 19h 11m 04s.xml">
+      <configuration name="AddUserTest.addTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GenericRestaurantDAOTest_getRestaurantByProperty - 2018.04.28 at 01h 13m 53s.xml">
-      <configuration name="GenericRestaurantDAOTest.getRestaurantByProperty" configurationId="JUnit" />
+    <history-entry file="AddUserTest_addTest - 2018.05.09 at 19h 12m 30s.xml">
+      <configuration name="AddUserTest.addTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GenericRestaurantDAOTest_updateRestaurant - 2018.04.21 at 22h 40m 34s.xml">
-      <configuration name="GenericRestaurantDAOTest.updateRestaurant" configurationId="JUnit" />
+    <history-entry file="AddUserTest_addTest - 2018.05.09 at 19h 12m 55s.xml">
+      <configuration name="AddUserTest.addTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172918000" />
+    <option name="totallyTimeSpent" value="238505000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <frame x="676" y="0" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -781,11 +941,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.49730977" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3123123" sideWeight="0.49730977" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25595695" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29208302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -797,8 +957,46 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44043043" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32732734" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32732734" sideWeight="0.50269026" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289777" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19677171" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.49730977" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44043043" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25595695" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -808,126 +1006,22 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/902ef140-97cf-4186-9bf1-10072e4d335a/console.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/topnav.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9386c078-aefb-47b3-95b5-be210fb1bebd/console.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/submit-picture.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/9386c078-aefb-47b3-95b5-be210fb1bebd.SCHEMA:foodpicturestest">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>9386c078-aefb-47b3-95b5-be210fb1bebd.SCHEMA:foodpicturestest</OriginalElement>
-          <nodes>
-            <node x="" y="">9386c078-aefb-47b3-95b5-be210fb1bebd.TABLE:foodpicturestest.Restaurant</node>
-            <node x="" y="">9386c078-aefb-47b3-95b5-be210fb1bebd.TABLE:foodpicturestest.Pictures</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="380.0" y="54.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/database.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/test/util/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1422">
-          <caret line="95" column="25" lean-forward="false" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/login-error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f87eb355-ac0e-45d8-9b29-6108cfca4356/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/log-in-page.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/f87eb355-ac0e-45d8-9b29-6108cfca4356.SCHEMA:foodpicturestest">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>f87eb355-ac0e-45d8-9b29-6108cfca4356.SCHEMA:foodpicturestest</OriginalElement>
-          <nodes>
-            <node x="" y="">f87eb355-ac0e-45d8-9b29-6108cfca4356.TABLE:foodpicturestest.user</node>
-            <node x="" y="">f87eb355-ac0e-45d8-9b29-6108cfca4356.TABLE:foodpicturestest.Restaurant</node>
-            <node x="" y="">f87eb355-ac0e-45d8-9b29-6108cfca4356.TABLE:foodpicturestest.Pictures</node>
-            <node x="" y="">f87eb355-ac0e-45d8-9b29-6108cfca4356.TABLE:foodpicturestest.user_roles</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.9332023575638507" x="368.0" y="190.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/RestaurantDAO.java" />
-    <entry file="file://$PROJECT_DIR$/individualproject.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="219" column="138" lean-forward="false" selection-start-line="219" selection-start-column="138" selection-end-line="219" selection-end-column="138" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a0fa951c-327b-4cfb-857c-5655528ab38a/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/LICENSE" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/README.md" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/css/1-col-portfolio.css" />
-    <entry file="file://$PROJECT_DIR$/individualproject.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="63" column="46" lean-forward="true" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -938,154 +1032,250 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar!/javax/persistence/criteria/CriteriaQuery.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="49" lean-forward="false" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/PictureDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b78c2f37-140d-4173-a64f-fb3be9777db7/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PictureDAOTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/RestaurantDAOTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/picture.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/cleandb.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="153" lean-forward="false" selection-start-line="7" selection-start-column="153" selection-end-line="7" selection-end-column="153" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/PictureForm.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/submit-picture.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/custom-jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/GenericDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="88" column="24" lean-forward="true" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
+        <state relative-caret-position="139">
+          <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="168">
+          <caret line="28" column="21" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GenericRestaurantDAOTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/Picture.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="88" column="45" lean-forward="false" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/f84760eb/b78c2f37-140d-4173-a64f-fb3be9777db7/foodpicturestest.Restaurant">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/f84760eb/b78c2f37-140d-4173-a64f-fb3be9777db7/foodpicturestest.Pictures">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+        <state relative-caret-position="18">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/Restaurant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        <state relative-caret-position="108">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/dynamic-form.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/AllRestaurants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-432">
-          <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+        <state relative-caret-position="218">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/login-error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/util/AmazonS3Handler.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/test/images.jpeg" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/picture-div.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/test/util/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/cleandb.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        <state relative-caret-position="126">
+          <caret line="7" column="138" lean-forward="false" selection-start-line="7" selection-start-column="138" selection-end-line="7" selection-end-column="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/individualproject.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1070">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/AllPictures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/IndividualPicture.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="324">
+          <caret line="29" column="7" lean-forward="false" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/IndividualRestaurant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-199">
+          <caret line="26" column="76" lean-forward="false" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/PicturesByRestaurant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="46" column="48" lean-forward="false" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/pictures-by-restaurant.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="46" column="48" lean-forward="false" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/restaurant-picture-form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-97">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/util/UploadTempImage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/all-restaurants.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="53" column="48" lean-forward="false" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/individual-picture.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="45" column="48" lean-forward="false" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="117" column="33" lean-forward="false" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/Logout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/SubmitPictureForRestaurant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="20" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdatePicture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/GenericDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1728">
+          <caret line="108" column="51" lean-forward="false" selection-start-line="108" selection-start-column="51" selection-end-line="108" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdatePictureView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-155">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/APITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/picture-form.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        <state relative-caret-position="145">
+          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/DeletePicture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/Picture.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/UserRoles.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/User.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/AddUser.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/AddUserTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdateRestaurantView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        <state relative-caret-position="-145">
+          <caret line="20" column="53" lean-forward="false" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="24" column="53" lean-forward="false" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -1093,78 +1283,74 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/GenericPictureDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
-          <caret line="37" column="37" lean-forward="true" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdatePictureView.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/GenericRestaurantDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        <state relative-caret-position="270">
+          <caret line="54" column="21" lean-forward="false" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/AllPictures.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/individual-restaurant.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
+        <state relative-caret-position="180">
+          <caret line="64" column="46" lean-forward="false" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdateRestaurant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/update-restaurant.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="66" column="76" lean-forward="false" selection-start-line="66" selection-start-column="76" selection-end-line="66" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/SubmitPicture.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="67" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/picture-div.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="91" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="91" />
+        <state relative-caret-position="-180">
+          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/update-picture.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="64" column="30" lean-forward="true" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
+        <state relative-caret-position="168">
+          <caret line="62" column="16" lean-forward="false" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdatePicture.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/util/DetectLabels.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="245">
+          <caret line="43" column="55" lean-forward="false" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web-pages/individual-picture.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/util/UploadToS3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="58" column="57" lean-forward="false" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="57" />
+        <state relative-caret-position="198">
+          <caret line="38" column="55" lean-forward="false" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/DeletePicture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="32" column="41" lean-forward="true" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

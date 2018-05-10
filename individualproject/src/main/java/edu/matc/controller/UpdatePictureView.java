@@ -16,6 +16,10 @@ import java.io.IOException;
 @WebServlet(
         urlPatterns = {"/updatepictureview"}
 )
+/**
+ * This Servlet class passes an individual picture
+ * information to be edited.
+ */
 public class UpdatePictureView extends HttpServlet {
     private Logger logger = Logger.getLogger(this.getClass());
 

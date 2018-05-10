@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.List;
+import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -84,7 +85,23 @@ public class GenericPictureDAOTest {
     public void getPictureByID() {
         Picture picture = (Picture)pictureDAO.getByID(1);
         assertNotNull(picture);
-        assertEquals("https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Meatball_pizza.jpg/1200px-Meatball_pizza.jpg", picture.getPicture());
+        //assertEquals("https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Meatball_pizza.jpg/1200px-Meatball_pizza.jpg", picture.getPicture());
+
+
+    }
+
+    @Test
+    public void getPictureByRestaurant() {
+        int restaurantID = 1;
+
+        GenericDAO restaurantDAO = new GenericDAO(Restaurant.class);
+        Restaurant restaurant = (Restaurant) restaurantDAO.getByID(restaurantID);
+
+        Set<Picture> pictures = restaurant.getPictures();
+
+        for (Picture picture : pictures) {
+            System.out.println(picture.getPicture());
+        }
 
 
     }

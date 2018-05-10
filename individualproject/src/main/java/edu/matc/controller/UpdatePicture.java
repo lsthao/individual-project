@@ -16,9 +16,23 @@ import java.io.IOException;
 @WebServlet(
         urlPatterns = {"/updatePicture"}
 )
+/**
+ * This servlet class is used to update a picture.
+ *
+ * @Author Leja Thao
+ */
 public class UpdatePicture extends HttpServlet {
     private Logger logger = Logger.getLogger(this.getClass());
 
+    /**
+     * This doPost method updates a picture comment and redirects to the updated pictures
+     * individual page.
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 

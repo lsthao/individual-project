@@ -16,9 +16,23 @@ import java.io.IOException;
 @WebServlet(
         urlPatterns = {"/individualpicture"}
 )
+/**
+ * This class is used to display an individual picture.
+ *
+ * @Author Leja Thao
+ */
 public class IndividualPicture extends HttpServlet {
     private Logger logger = Logger.getLogger(this.getClass());
 
+    /**
+     * This is a doGet method that get an ID parameter passed through the URL and
+     * gets the picture of that ID to display on the page.
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws
             ServletException, IOException {
 
